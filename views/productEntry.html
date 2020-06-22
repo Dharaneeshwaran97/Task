@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <style>
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        width: 40%;
+      }
+
+      .container {
+        padding: 2px 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 style="color: blue; padding-left: 40%;">Product Entry</h2>
+    <form
+      enctype="multipart/form-data"
+      action="/product"
+      method="POST"
+      style="padding-left: 30%;"
+    >
+      <div class="card">
+        <div class="container">
+          <h4>Product name</h4>
+          <input type="text" name="productName" style="height: 25px;"  required/>
+          <h4>Product Price</h4>
+          <input type="text" name="productPrice" style="height: 25px;" />
+          <h4>Product Image</h4>
+          <input type="file" name="productImage" style="height: 25px;" />
+          <h4>Product Description</h4>
+
+          <textarea name="productDesc"></textarea>
+          <br /><br /><br />
+          <button class="button">Submit</button>
+          <!-- <a href="/register.html" class="button">Sign Up</a> -->
+        </div>
+      </div>
+    </form>
+  </body>
+  <style>
+    .button {
+      background-color: #1b3974;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+    }
+  </style>
+</html>
